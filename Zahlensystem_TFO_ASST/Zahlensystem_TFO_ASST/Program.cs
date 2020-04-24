@@ -9,6 +9,7 @@ namespace Zahlensystem_TFO_ASST
     {
         static void Main(string[] args)
         {
+            
             Titel("Zahlensystem", ConsoleColor.Green);
 
 
@@ -37,6 +38,8 @@ namespace Zahlensystem_TFO_ASST
             
         
         }
+
+        //Titelmethote
         static void Titel(string titel, ConsoleColor textfarbe)
         {
             int breite = Console.WindowWidth;
@@ -61,7 +64,7 @@ namespace Zahlensystem_TFO_ASST
             Console.ForegroundColor = aktTextFarbe;
         }
 
-
+        //Binärzahl einlesen 
         public static string BinaerzahlEinlesen()
         {
             Console.Write("Geben Sie die Binärzahl ein (das kleinste Bit ist ganz rechts): ");
@@ -77,6 +80,6 @@ namespace Zahlensystem_TFO_ASST
             }
 
             return Binaerzahl;
-        }// Ende der Methode
+        }
     }
 }
