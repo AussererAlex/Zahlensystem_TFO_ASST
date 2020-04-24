@@ -59,7 +59,7 @@ namespace Zahlensystem_TFO_ASST
             Console.ForegroundColor = aktTextFarbe;
         }
 
-        //Binärzahl einlesen 
+        //Binärzahl einlesen (Schwellensattl Julian)
         public static string BinaerzahlEinlesen()
         {
             Console.Write("\nGeben Sie die Binärzahl ein (das kleinste Bit ist ganz rechts): ");
@@ -86,7 +86,7 @@ namespace Zahlensystem_TFO_ASST
             return Convert.ToInt32(Binaerzahl, 2).ToString("X");              
         }
 
-        //Dezimal
+        //Dezimal (Thaler Hannes)
         static string Dezimal(string Zahl)
         {
             Zahl = Convert.ToInt32(Zahl, 2).ToString();
