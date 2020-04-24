@@ -9,6 +9,7 @@ namespace Zahlensystem_TFO_ASST
     {
         static void Main(string[] args)
         {
+
             
             Titel("Zahlensystem", ConsoleColor.Green);
 
@@ -25,7 +26,7 @@ namespace Zahlensystem_TFO_ASST
                 {
                     //Binär => Dezimal 
                     string Zahl = BinaerzahlEinlesen();
-                  
+                    Console.WriteLine("\nDezimalzahl: "+ Dezimal(Zahl));
                 }
                 else
                 {
@@ -93,6 +94,18 @@ namespace Zahlensystem_TFO_ASST
         {
             return Convert.ToInt32(Binaerzahl, 2).ToString("X");
           
+
+            // Console.WriteLine("\nDezimalzahl: "+ Dezimal(Zahl)); um meine Methode aufzurufen und das Ergebnis auszugeben!
+            
+
+        }
+
+        //Dezimal
+        static string Dezimal(string Zahl)
+        {
+            Zahl = Convert.ToInt32(Zahl, 2).ToString();
+            return (Zahl);
+
         }
     }
 }
