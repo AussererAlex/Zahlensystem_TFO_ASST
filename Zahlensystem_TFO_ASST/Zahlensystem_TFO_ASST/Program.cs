@@ -11,7 +11,29 @@ namespace Zahlensystem_TFO_ASST
         {
             Titel("Zahlensystem", ConsoleColor.Green);
 
-            Console.ReadKey();
+            Console.Write("\nWählen Sie die Umwandlung (0 = Binär => Dezimal / 1 = Binär => Hexadezimal / 2 = Ende): ");
+            string wahl = Console.ReadLine();
+            
+            while (wahl != "2")
+            {
+                
+               
+                if (wahl == "0")
+                {
+                    //Binär => Dezimal 
+                  
+                }
+                else
+                {
+                    //Binär => Hexadezimal
+                  
+                }
+
+                Console.Write("\nWählen Sie die Umwandlung (0 = Binär => Dezimal / 1 = Binär => Hexadezimal / 2 = Ende): ");
+                wahl = Console.ReadLine();
+            }
+            
+        
         }
         static void Titel(string titel, ConsoleColor textfarbe)
         {
