@@ -13,55 +13,35 @@ namespace Zahlensystem_TFO_ASST
             Titel("Zahlensystem", ConsoleColor.Green);
 
 
-            string Zahl = BinaerzahlEinlesen();
+            
             Console.Write("\nWählen Sie die Umwandlung (0 = Binär => Dezimal / 1 = Binär => Hexadezimal / 2 = Ende): ");
             string wahl = Console.ReadLine();
-            
+           
             while (wahl != "2")
             {
-                
+               
                
                 if (wahl == "0")
                 {
                     //Binär => Dezimal 
+                    string Zahl = BinaerzahlEinlesen();
                   
                 }
                 else
                 {
                     //Binär => Hexadezimal
-                  
+                    string Zahl = BinaerzahlEinlesen();
+                    string ErgHex = Hexadezimal(Zahl);
+                    Console.WriteLine("Das Ergebniss ist : "+ ErgHex);
                 }
-
+                
                 Console.Write("\nWählen Sie die Umwandlung (0 = Binär => Dezimal / 1 = Binär => Hexadezimal / 2 = Ende): ");
                 wahl = Console.ReadLine();
             }
             
         
         }
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+     
         //Titelmethote
         static void Titel(string titel, ConsoleColor textfarbe)
         {
@@ -90,7 +70,7 @@ namespace Zahlensystem_TFO_ASST
         //Binärzahl einlesen 
         public static string BinaerzahlEinlesen()
         {
-            Console.Write("Geben Sie die Binärzahl ein (das kleinste Bit ist ganz rechts): ");
+            Console.Write("\nGeben Sie die Binärzahl ein (das kleinste Bit ist ganz rechts): ");
             string Binaerzahl = Console.ReadLine();
 
             while (Binaerzahl.Contains("2") || Binaerzahl.Contains("3") || Binaerzahl.Contains("4") || Binaerzahl.Contains("5") || Binaerzahl.Contains("6") || Binaerzahl.Contains("7") || Binaerzahl.Contains("8") || Binaerzahl.Contains("9"))
@@ -112,6 +92,7 @@ namespace Zahlensystem_TFO_ASST
         static string Hexadezimal(string Binaerzahl)
         {
             return Convert.ToInt32(Binaerzahl, 2).ToString("X");
+          
         }
     }
 }
