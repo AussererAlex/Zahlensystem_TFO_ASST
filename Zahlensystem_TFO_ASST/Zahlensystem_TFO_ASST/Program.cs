@@ -8,20 +8,12 @@ namespace Zahlensystem_TFO_ASST
     class Program
     {
         static void Main(string[] args)
-        {
-
-            
-            Titel("Zahlensystem", ConsoleColor.Green);
-
-
-            
+        {            
+            Titel("Zahlensystem", ConsoleColor.Green);           
             Console.Write("\nWählen Sie die Umwandlung (0 = Binär => Dezimal / 1 = Binär => Hexadezimal / 2 = Ende): ");
-            string wahl = Console.ReadLine();
-           
+            string wahl = Console.ReadLine();          
             while (wahl != "2")
-            {
-               
-               
+            {                         
                 if (wahl == "0")
                 {
                     //Binär => Dezimal 
@@ -39,8 +31,7 @@ namespace Zahlensystem_TFO_ASST
                 Console.Write("\nWählen Sie die Umwandlung (0 = Binär => Dezimal / 1 = Binär => Hexadezimal / 2 = Ende): ");
                 wahl = Console.ReadLine();
             }
-            
-        
+                    
         }
      
         //Titelmethote
@@ -92,12 +83,7 @@ namespace Zahlensystem_TFO_ASST
         /// <returns>Hexadezimalzahl als string</returns>
         static string Hexadezimal(string Binaerzahl)
         {
-            return Convert.ToInt32(Binaerzahl, 2).ToString("X");
-          
-
-            // Console.WriteLine("\nDezimalzahl: "+ Dezimal(Zahl)); um meine Methode aufzurufen und das Ergebnis auszugeben!
-            
-
+            return Convert.ToInt32(Binaerzahl, 2).ToString("X");              
         }
 
         //Dezimal
@@ -105,7 +91,6 @@ namespace Zahlensystem_TFO_ASST
         {
             Zahl = Convert.ToInt32(Zahl, 2).ToString();
             return (Zahl);
-
         }
     }
 }
