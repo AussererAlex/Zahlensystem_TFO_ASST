@@ -39,6 +39,29 @@ namespace Zahlensystem_TFO_ASST
         
         }
 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         //Titelmethote
         static void Titel(string titel, ConsoleColor textfarbe)
         {
