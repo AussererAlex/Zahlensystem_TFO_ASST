@@ -9,7 +9,16 @@ namespace Zahlensystem_TFO_ASST
     {
         static void Main(string[] args)
         {
+            // Console.WriteLine("\nDezimalzahl: "+ Dezimal(Zahl)); um meine Methode aufzurufen und das Ergebnis auszugeben!
             Console.ReadKey();
+        }
+
+        //Dezimal
+        static string Dezimal(string Zahl)
+        {
+            Zahl = Convert.ToInt32(Zahl, 2).ToString();
+            return (Zahl);
+
         }
     }
 }
